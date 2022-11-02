@@ -1,14 +1,15 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
-export const templateSlice = createSlice({
-  name: "name",
+export const TodoSlice = createSlice({
+  name: 'todo',
   initialState: {
-    counter: 10,
+    counter: 10
   },
-  reducers: {
-    increment: (state /* action */) => {
-      state.counter += 1;
-    },
-  },
+reducers: {
+   increment: (state, /* action */ ) => {
+    state.counter += 1;
+   },
+ }
 });
-export const { increment } = templateSlice.actions;
+
+export const { increment } = TodoSlice.actions;
